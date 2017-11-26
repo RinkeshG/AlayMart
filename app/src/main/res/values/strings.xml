@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AlayMart</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="name">Alay Mart</string>
+    <string name="Continue">continue</string>
+    <string name="numberofrestaurants">10</string>
+    <string name="inyourarea">Restaurant found in your area</string>
+    <string name="Rating">3.5</string>
+    <string name="Typeofcusine">Indian, Chinese</string>
+    <string name="restaurants">Search Restaurants Near You</string>
+</resources>

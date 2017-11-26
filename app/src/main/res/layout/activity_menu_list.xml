@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.internship.rinkesh.alaymart.MenuList"
+    android:background="@drawable/anim">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/noofres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="@string/numberofrestaurants"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/inyourarea"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:background="@drawable/card_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="detailsclick"
+        android:background="@drawable/card_grey">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:text="GMT Restaurant and Bar"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/ebonyclay"
+            android:fontFamily="serif"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="120sp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/res1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/rating1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/Rating"
+                    android:textColor="@color/ebonyclay"
+                    android:fontFamily="serif"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/cusine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="10sp"
+                    android:text="@string/Typeofcusine"
+                    android:textColor="@color/ebonyclay"
+                    android:fontFamily="serif"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="10sp"
+                    android:text="1000-1200 for two people"
+                    android:textColor="@color/ebonyclay"
+                    android:fontFamily="serif"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="10sp"
+                    android:text="Open Now"
+                    android:textColor="@color/ebonyclay"
+                    android:fontFamily="serif"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_grey">
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:text="New Central Hotel"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/ebonyclay"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/res2"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/rating2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="4.1"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/cusine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="South Indian"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="1000-1200 for two people"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+
+                    <TextView
+                        android:id="@+id/status2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Open Now"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_grey">
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:text="Novelty Tea House"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/ebonyclay"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/res3"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/rating3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="2.5"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/cusine3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Fast Food"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/price3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="1000-1200 for two people"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+
+                    <TextView
+                        android:id="@+id/status3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Open Now"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_grey">
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:text="Prakash Bhavan"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/ebonyclay"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/info4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/res4"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rating4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Rating"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"/>
+
+                    <TextView
+                        android:id="@+id/cusine4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Typeofcusine"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"/>
+
+                    <TextView
+                        android:id="@+id/price4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="1000-1200 for two people"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"/>
+
+
+                    <TextView
+                        android:id="@+id/status4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Open Now"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_grey">
+
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10sp"
+                android:text="Kakda Ramprasad"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/ebonyclay"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/info5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120sp"
+                    android:layout_height="120sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/res5"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/rating5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Rating"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/cusine5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Typeofcusine"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/price5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="1000-1200 for two people"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+
+                    <TextView
+                        android:id="@+id/status5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Open Now"
+                        android:textColor="@color/ebonyclay"
+                        android:fontFamily="serif"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
